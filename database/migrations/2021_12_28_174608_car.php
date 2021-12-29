@@ -17,6 +17,10 @@ class Car extends Migration
             $table->id();
             $table->string('vehicle_id');
             $table->string('car_name');
+            $table->string('name')->nullable();
+            $table->string('book_date')->nullable();
+            $table->string('booking_for')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
